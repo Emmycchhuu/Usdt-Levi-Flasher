@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Levi Flasher</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/web3@latest/dist/web3.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="jumbotron text-center neon-box">
+            <h1 class="display-4 neon-text">Levi Flasher</h1>
+            <p class="lead neon-text">A USDT Transaction Simulator for Educational Purposes</p>
+        </div>
+        <div class="text-center">
+            <h4 class="neon-text">Live Crypto Transactions</h4>
+            <div id="live-transactions" class="neon-box"></div>
+        </div>
+        <div class="text-center mt-4">
+            <h4 class="neon-text">Donate to Support Us</h4>
+            <p class="neon-text">USDT Address: <span id="usdt-address">TWaB9s2nBVMbDaZaVNpAYMKXqzc6ZE26CY</span></p>
+            <button class="btn btn-primary" onclick="copyAddress()">Copy Address</button>
+        </div>
+        <div class="text-center mt-4">
+            <h4 class="neon-text">Get Your License Key</h4>
+            <form id="payment-form" class="neon-box">
+                <div class="form-group">
+                    <label for="name" class="neon-text">Name:</label>
+                    <input type="text" class="form-control" id="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email" class="neon-text">Email:</label>
+                    <input type="email" class="form-control" id="email" required>
+                </div>
+                <button type="submit" class="btn btn-success">Pay 750 USDT for Lifetime License Key</button>
+            </form>
+        </div>
+        <div class="text-center mt-4">
+            <h4 class="neon-text">Enter Your License Key</h4>
+            <form id="license-form" class="neon-box">
+                <div class="form-group">
+                    <label for="license-key" class="neon-text">License Key:</label>
+                    <input type="text" class="form-control" id="license-key" required>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+        </div>
+        <div class="text-center mt-4">
+            <h4 class="neon-text">BTC Flasher Coming Soon!</h4>
+        </div>
+        <div id="chat-bot" class="neon-box mt-4">
+            <h4 class="neon-text text-center">Chat with Us</h4>
+            <div id="chat-box" class="chat-box"></div>
+            <input type="text" id="chat-input" class="form-control" placeholder="Ask a question...">
+            <button class="btn btn-primary mt-2" onclick="sendMessage()">Send</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
